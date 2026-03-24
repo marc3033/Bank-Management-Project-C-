@@ -43,9 +43,7 @@ bool Bank::loadAccounts()                // loads all information for accounts
 	std::ifstream inFile("account_info.txt");
 	if (!inFile)
 	{
-		std::cout << "Failed to load accounts.  Terminating Program.";
-		return false;
-		
+		return true;
 	}
 
 	allAccounts.clear();
